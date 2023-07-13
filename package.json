@@ -1,11 +1,11 @@
 {
   "name": "testing-library",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "test:unit": "vue-cli-service test:unit",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,6 +13,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.5",
     "vite": "^4.4.0"
-  }
+  },
+  "type": "module"
 }
